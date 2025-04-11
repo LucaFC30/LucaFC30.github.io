@@ -2,213 +2,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atlas – TI | Soluções Tecnológicas</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(to right, #2f2f2f 50%, #5c9ca4 50%);
-      color: white;
-      padding: 60px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      width: 60px;
-      margin-right: 15px;
-    }
-
-    .logo h1 {
-      font-size: 28px;
-      font-weight: 700;
-    }
-
-    .slogan {
-      font-size: 18px;
-      color: #d3d3d3;
-    }
-
-    nav {
-      margin-top: 20px;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      position: relative;
-    }
-
-    nav a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: white;
-      bottom: -5px;
-      left: 0;
-      transition: width 0.3s ease-in-out;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .hero {
-      text-align: center;
-      background: linear-gradient(135deg, #5c9ca4 30%, #2f2f2f);
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
-    }
-
-    .btn-whatsapp {
-      padding: 15px 30px;
-      background-color: #25D366;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      font-size: 16px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-
-    .btn-whatsapp:hover {
-      background-color: #1da851;
-      transform: scale(1.05);
-    }
-
-    .form-contato form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    .form-contato input,
-    .form-contato textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 16px;
-    }
-
-    .form-contato button {
-      padding: 12px;
-      background-color: #2f2f2f;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .form-contato button:hover {
-      background-color: #5c9ca4;
-    }
-
-    footer {
-      background: #2f2f2f;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas – TI | Soluções Tecnológicas</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #0a0a0a; color: white; }
+        header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 2rem; background: #000c1f; }
+        header img { height: 50px; }
+        nav a { color: white; text-decoration: none; margin-left: 1.5rem; font-weight: bold; }
+        section { padding: 4rem 2rem; max-width: 960px; margin: auto; }
+        h1, h2 { color: #1da1f2; }
+        .cta { background: #1da1f2; color: white; padding: 1rem 2rem; border: none; font-size: 1rem; border-radius: 8px; cursor: pointer; transition: background 0.3s; }
+        .cta:hover { background: #1480c9; }
+        footer { background: #000c1f; text-align: center; padding: 2rem; color: #ccc; }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="https://i.imgur.com/Ht1E1hQ.png" alt="Logo Atlas TI" />
-      <div>
+    <header>
+        <img src="logo-atlasti.png" alt="Logo Atlas TI" />
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="https://wa.me/5511963940405" target="_blank">Contato</a>
+        </nav>
+    </header>
+    <section id="sobre">
         <h1>Atlas – TI</h1>
-        <p class="slogan">Soluções Tecnológicas</p>
-      </div>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Transformamos desafios em soluções digitais</h2>
-    <p>Infraestrutura, suporte técnico, segurança e inovação para sua empresa evoluir com confiança.</p>
-    <a class="btn-whatsapp" href="https://wa.me/5511963940405" target="_blank">Fale com a gente no WhatsApp</a>
-  </section>
-
-  <section id="sobre">
-    <h2>Quem Somos</h2>
-    <p>A Atlas – TI é uma empresa especializada em soluções tecnológicas. Com uma equipe qualificada e apaixonada por inovação, oferecemos suporte, infraestrutura e segurança da informação com foco total em resultados.</p>
-  </section>
-
-  <section id="servicos">
-    <h2>Nossos Serviços</h2>
-    <ul>
-      <li>Suporte técnico para empresas</li>
-      <li>Infraestrutura de redes e servidores</li>
-      <li>Consultoria em segurança da informação</li>
-      <li>Monitoramento e gestão de ativos de TI</li>
-      <li>Automação de processos com tecnologia</li>
-    </ul>
-  </section>
-
-  <section id="portifolio">
-    <h2>Nosso Compromisso</h2>
-    <p>Estamos prontos para transformar desafios em conquistas. Embora estejamos no início da nossa trajetória, cada projeto será tratado com excelência, ética e total dedicação. Em breve, aqui estarão histórias de sucesso que vamos construir juntos.</p>
-  </section>
-
-  <section id="contato" class="form-contato">
-    <h2>Entre em Contato</h2>
-    <form action="mailto:lucafortunato.sabino@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Atlas – TI. Todos os direitos reservados.</p>
-  </footer>
+        <p>Soluções tecnológicas sob medida. Conectamos o presente ao futuro com inovação, excelência e responsabilidade.</p>
+    </section>
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Desenvolvimento de Sistemas</li>
+            <li>Consultoria em TI</li>
+            <li>Infraestrutura e Redes</li>
+            <li>Automação de Processos</li>
+        </ul>
+    </section>
+    <section>
+        <a href="https://wa.me/5511963940405" target="_blank">
+            <button class="cta">Fale Conosco no WhatsApp</button>
+        </a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Atlas – TI | Soluções Tecnológicas. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
