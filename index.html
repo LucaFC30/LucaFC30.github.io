@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas – TI | Soluções Tecnológicas</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Segoe UI', sans-serif; background: #ffffff; color: #000; }
+        header {
+            background: #001f3f;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header img {
+            height: 50px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00BFFF;
+        }
+        section {
+            padding: 7rem 2rem 3rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: background 1s ease;
+        }
+        #sobre { background: #ffffff; color: #000000; }
+        #servicos { background: #e6f0ff; color: #000000; }
+        #contato { background: #001f3f; color: #ffffff; }
+        h1, h2 { margin-bottom: 1rem; }
+        p, li { font-size: 1.1rem; }
+        ul { padding-left: 1rem; }
+        ul li { margin-bottom: 0.5rem; }
+        .cta {
+            background: #00BFFF;
+            color: #fff;
+            padding: 1rem 2rem;
+            border: none;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .cta:hover {
+            background: #009ACD;
+            transform: scale(1.05);
+        }
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+        @media (max-width: 768px) {
+            header { flex-direction: column; align-items: flex-start; }
+            nav { margin-top: 1rem; }
+            nav a { display: block; margin: 0.5rem 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo-atlas-ti.png" alt="Logo Atlas TI">
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h1>Bem-vindo à Atlas – TI</h1>
+        <p>Transformamos desafios tecnológicos em soluções reais. Seja infraestrutura, automação ou desenvolvimento, aqui tem inovação de verdade.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Desenvolvimento de Sistemas Sob Medida</li>
+            <li>Consultoria Especializada em TI</li>
+            <li>Infraestrutura de Redes e Suporte</li>
+            <li>Automação de Processos Empresariais</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Fale com a Gente</h2>
+        <p>Vamos conversar sobre como podemos ajudar seu negócio a evoluir tecnologicamente.</p>
+        <a href="https://wa.me/5511963940405" target="_blank">
+            <button class="cta">Entrar em Contato pelo WhatsApp</button>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Atlas – TI | Soluções Tecnológicas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
